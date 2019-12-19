@@ -5,7 +5,7 @@ public abstract class LivingSighting extends Sighting {
 	protected String commonName;
 
 	public void displaySpecies() {
-		System.out.println("New animal found, Scientific Name: " + scientificName);
+		System.out.println("A new " + scientificName + ", commonly known as the " + commonName + " was found.");
 	}
 
 	public abstract void displayColor();

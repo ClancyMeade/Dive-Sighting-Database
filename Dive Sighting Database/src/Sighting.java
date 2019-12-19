@@ -1,23 +1,22 @@
 
 public abstract class Sighting {
-	protected int time;
+	protected String time;
 	protected String diveSite;
 	protected int waterTemperature;
 	protected int depth;
 	protected String date;
 	protected String type;
 
-	// Concrete Method
 	public void displayNumericalData() {
-		System.out.println(
-				"Data Entry 1: \n Dive Time: " + time + "\n Water Temp: " + waterTemperature + "\n Depth: " + depth);
+		System.out.println("Dive Time: " + time + "\nWater Temp: " + waterTemperature + " degrees fahrenheight\nDepth: "
+				+ depth + " feet\nDate: " + date);
+		System.out.println();
 	}
-
-	// Abstract Method
-	public abstract void displayDiveSite();
 
 	public void displaySightingType() {
 		System.out.println("Dive Sighting: " + type);
 	}
+
+	public abstract void displayDiveSite();
 
 }

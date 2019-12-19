@@ -4,18 +4,23 @@ public class ReefSighting extends LivingSighting {
 	protected String shape;
 
 	public ReefSighting() {
-		scientificName = "Acropora palmata";
-		color = "blue";
-		area = 50;
-		shape = "horn";
+		time = "2:55 PM";
+		diveSite = "Great Barrier";
+		waterTemperature = 86;
+		depth = 40;
 		type = "Reef Sighting";
-		diveSite = "great barrier";
+		date = "7/18/19";
+		scientificName = "Acropora Palmata";
+		color = "blue";
+		commonName = "Elkhorn Coral";
+		shape = "horn";
+		area = 50;
 
 	}
 
 	@Override
 	public void displayColor() {
-		System.out.println("The color of this coral reef is " + color);
+		System.out.println("The color of this coral reef is " + color + ".");
 
 	}
 
@@ -26,7 +31,7 @@ public class ReefSighting extends LivingSighting {
 	}
 
 	public void displayArea() {
-		System.out.println("The area of this reef is " + area + " feet.");
+		System.out.println("The area of this reef is " + area + " square feet.");
 	}
 
 	public void displayShape() {
